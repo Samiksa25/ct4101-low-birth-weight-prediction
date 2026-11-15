@@ -66,6 +66,29 @@ The dataset was split into 80% training data and 20% testing data. Stratified sa
 
 The notebook contains the data audit, preprocessing steps, baseline model and evaluation results.
 
+## Machine Learning Models
+
+After establishing the baseline, I developed and evaluated two machine learning models:
+
+- **Logistic Regression:** Used as a classification model with feature scaling and class weighting to address the imbalance in the target variable.
+- **Random Forest:** Used as an ensemble classification model with class weighting.
+
+I then applied GridSearchCV with 5-fold cross-validation to tune both models, using the F1-score as the selection metric.
+
+## Final Model Findings
+
+The tuned Random Forest achieved the highest F1-score among the five evaluated models, with an F1-score of 0.2286 and ROC-AUC of 0.6938.
+
+The tuned Logistic Regression achieved a higher recall of 56.76%, identifying 21 out of the 37 low-birth-weight cases in the test set. The tuned Random Forest identified 16 cases and produced fewer false positives.
+
+These findings highlight the trade-off between precision and recall when predicting low-birth-weight cases in an imbalanced dataset.
+
+## Limitations and Future Improvements
+
+The dataset contains a relatively small proportion of low-birth-weight cases, which makes classification challenging. The models also produced false-positive predictions, meaning some babies were incorrectly classified as having low birth weight.
+
+Future work could explore additional classification techniques, feature selection, class-imbalance handling methods and further model optimisation. The duplicate records identified during the initial data audit should also be investigated to understand their potential effect on model evaluation.
+
 ## Assistance Declaration
 
 AI tools were used to help me understand the project requirements, work through parts of the Python code and organise the project documentation. I reviewed the code and results as part of my work. Any assistance and external resources are acknowledged in accordance with the module's academic integrity guidelines.
