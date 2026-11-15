@@ -90,5 +90,5 @@ The dataset contains a relatively small proportion of low-birth-weight cases, wh
 Future work could explore additional classification techniques, feature selection, class-imbalance handling methods and further model optimisation. The duplicate records identified during the initial data audit should also be investigated to understand their potential effect on model evaluation.
 
 ## Assistance Declaration
-
+ChatGPT was used to help understand project requirements, troubleshoot Python code and improve documentation. I reviewed and adapted the suggestions and take responsibility for the final code, analysis and results.
 AI tools were used to help me understand the project requirements, work through parts of the Python code and organise the project documentation. I reviewed the code and results as part of my work. Any assistance and external resources are acknowledged in accordance with the module's academic integrity guidelines.
