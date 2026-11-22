@@ -77,7 +77,7 @@ Python 3 is required, along with the libraries listed in `requirements.txt`.
 
    `jupyter notebook`
 
-7. Open `final_notebook.ipynb` and run the cells from beginning to end.
+7. Open `notebooks/birthweight_analysis.ipynb` and run the cells from beginning to end.
 
 ## Project Structure
 
@@ -85,13 +85,17 @@ Python 3 is required, along with the libraries listed in `requirements.txt`.
 CT4101_Low_Birth_Weight/
 │
 ├── data/
-│   └── birthweight_smoking (1).xlsx
+│   └── README.md
 │
-├── final_notebook.ipynb
+├── notebooks/
+│   ├── README.md
+│   └── birthweight_analysis.ipynb
 │
+├── reports/
+├── .gitignore
 ├── README.md
-│
-└── requirements.txt
+├── requirements.txt
+└── AI_Assistance_Declaration.md
 ```
 
 The dataset should be downloaded separately and placed inside the `data` folder before running the notebook.
